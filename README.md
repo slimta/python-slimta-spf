@@ -31,5 +31,5 @@ using this extension.
 [2]: http://docs.slimta.org/en/latest/api/extra.spf.html
 [3]: http://docs.slimta.org/en/latest/manual/extensions.html#enforce-spf
 [4]: http://www.openspf.org/
-[5]: /slimta/python-slimta
+[5]: https://github.com/slimta/python-slimta
 
