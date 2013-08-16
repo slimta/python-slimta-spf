@@ -23,7 +23,7 @@ from setuptools import setup, find_packages
 
 
 setup(name='python-slimta-spf',
-      version='0.1.1',
+      version='0.1.2',
       author='Ian Good',
       author_email='icgood@gmail.com',
       description='Adds an SPF authorization extension to python-slimta.',
