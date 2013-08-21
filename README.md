@@ -28,8 +28,8 @@ Refer to the [API Documentation][2] and [Manual][3] for more information on
 using this extension.
 
 [1]: http://slimta.org/
-[2]: http://docs.slimta.org/en/latest/api/extra.spf.html
-[3]: http://docs.slimta.org/en/latest/manual/extensions.html#enforce-spf
+[2]: http://docs.slimta.org/latest/api/extra.spf.html
+[3]: http://docs.slimta.org/latest/manual/extensions.html#enforce-spf
 [4]: http://www.openspf.org/
 [5]: https://github.com/slimta/python-slimta
 
