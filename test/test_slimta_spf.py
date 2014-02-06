@@ -17,8 +17,7 @@ class TestEnforceSpf(MoxTestBase):
 
     def test_bad_result_type(self):
         espf = EnforceSpf()
-        with self.assertRaises(ValueError):
-            espf.set_enforcement('asdf')
+        self.assertRaises(ValueError, espf.set_enforcement, 'asdf')
         espf.set_enforcement('PASS')
         espf.set_enforcement('pass')
 
