@@ -39,8 +39,8 @@ __all__ = ['EnforceSpf']
 
 
 class EnforceSpf(object):
-    """Class used to check SPF records and enforce a policy against the results.
-    By default, results are logged but not acted upon.
+    """Class used to check SPF records and enforce a policy against the
+    results.  By default, results are logged but not acted upon.
 
     :param timeout: Timeout in seconds before giving up the check. An SPF check
                     that times out is equivalent to a ``'temperror'`` result.
@@ -52,15 +52,15 @@ class EnforceSpf(object):
         self.timeout = timeout
 
     def set_enforcement(self, result, match_code='550',
-                                      match_message='5.7.1 Access denied'):
+                        match_message='5.7.1 Access denied'):
         """Adds an enforcement policy to a particular SPF result. If the given
         result is seen, the ``MAIL FROM`` reply is set accordingly.
 
         :param result: The result code, one of ``'pass'``, ``'permerror'``,
                       ``'fail'``, ``'temperror'``, ``'softfail'``, ``'none'``,
                       ``'neutral'``.
-        :param match_code: When the result code matches, set the |Reply| code to
-                           this string.
+        :param match_code: When the result code matches, set the |Reply| code
+                           to this string.
         :param match_message: When the result code matches, set the |Reply|
                               message to this string. You can use the
                               ``{reason}`` template in your string.
@@ -93,8 +93,8 @@ class EnforceSpf(object):
         If enforcement policies are set for the result, the |Reply| is modified
         before calling the validator method.
 
-        This decorator can only be used on ``handle_mail()``, ``handle_rcpt()``,
-        and ``handle_data()``.
+        This decorator can only be used on ``handle_mail()``,
+        ``handle_rcpt()``, and ``handle_data()``.
 
         :param f: The overloaded :class:`~slimta.edge.smtp.SmtpValidators`
                   method to decorate.
