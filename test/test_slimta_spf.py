@@ -1,7 +1,7 @@
 
 import unittest
 
-from mox import MoxTestBase, IsA
+from mox3.mox import MoxTestBase, IsA
 import spf
 
 from slimta.spf import EnforceSpf
