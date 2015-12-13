@@ -1,12 +1,16 @@
 
 import unittest
+import threading
 
 from mox3.mox import MoxTestBase, IsA
+import gevent.monkey
 import spf
 
 from slimta.spf import EnforceSpf
 from slimta.envelope import Envelope
 from slimta.smtp.reply import Reply
+
+gevent.monkey.patch_all()
 
 
 class TestEnforceSpf(MoxTestBase):
