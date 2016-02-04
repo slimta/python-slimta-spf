@@ -10,7 +10,8 @@ Adds an [SPF][4] authorization extension to python-slimta. This enables MTAs
 built on `python-slimta` to apply policies to incoming mail based on the result
 of an SPF lookup check.
 
-[![Build Status](http://ci.slimta.org/job/python-slimta-spf/badge/icon)](http://ci.slimta.org/job/python-slimta-spf/)
+[![Build Status](https://travis-ci.org/slimta/python-slimta-spf.svg?branch=master)](https://travis-ci.org/slimta/python-slimta-spf)
+[![Coverage Status](https://coveralls.io/repos/github/slimta/python-slimta-spf/badge.svg?branch=master)](https://coveralls.io/github/slimta/python-slimta-spf?branch=master)
 
 Getting Started
 ===============
@@ -22,7 +23,7 @@ Started" section. Once inside your virtualenv:
 
 To run the suite of included unit tests:
 
-    (.venv)$ nosetests
+    (.venv)$ py.test
 
 Refer to the [API Documentation][2] and [Manual][3] for more information on
 using this extension.
