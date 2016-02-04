@@ -5,6 +5,7 @@ python:
   - "3.4"
   - "3.5"
 install:
+  - travis_retry pip install -U setuptools
   - travis_retry pip install -r test/requirements.txt
   - travis_retry pip install git+https://github.com/slimta/python-slimta.git
   - travis_retry pip install coveralls
