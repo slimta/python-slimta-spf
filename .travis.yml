@@ -7,6 +7,8 @@ python:
 install:
   - travis_retry pip install -U setuptools
   - travis_retry pip install -r test/requirements.txt
+  - travis_retry pip install pydns ipaddr || /bin/true
+  - travis_retry pip install py3dns || /bin/true
   - travis_retry pip install git+https://github.com/slimta/python-slimta.git
   - travis_retry pip install coveralls
   - travis_retry pip install -e .
